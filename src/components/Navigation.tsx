@@ -1,6 +1,12 @@
-
 import { Link, useLocation } from "react-router-dom";
-import { Home, BookOpen, Briefcase, Code, Database } from "lucide-react";
+import {
+  Home,
+  BookOpen,
+  Briefcase,
+  Code,
+  Database,
+  Contact,
+} from "lucide-react";
 
 const Navigation = () => {
   const location = useLocation();
@@ -11,6 +17,7 @@ const Navigation = () => {
     { path: "/work", label: "Work", icon: Briefcase },
     { path: "/codes", label: "Codes", icon: Code },
     { path: "/datasets", label: "Datasets", icon: Database },
+    { path: "/contact", label: "Contact", icon: Contact },
   ];
 
   return (
@@ -19,9 +26,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10">
-              <img 
-                src="/lovable-uploads/16e5dbdf-5449-4d4b-a581-1670fa21a7e9.png" 
-                alt="DOCEL.in Logo" 
+              <img
+                src="/lovable-uploads/16e5dbdf-5449-4d4b-a581-1670fa21a7e9.png"
+                alt="DOCEL.in Logo"
                 className="w-full h-full object-contain"
               />
             </div>
@@ -29,7 +36,7 @@ const Navigation = () => {
               Kamran Sohail
             </span>
           </Link>
-          
+
           <div className="hidden md:flex space-x-8">
             {navItems.map(({ path, label, icon: Icon }) => (
               <Link
@@ -51,7 +58,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <select
               value={location.pathname}
-              onChange={(e) => window.location.href = e.target.value}
+              onChange={(e) => (window.location.href = e.target.value)}
               className="border border-gray-300 rounded-md px-3 py-1 text-sm"
             >
               {navItems.map(({ path, label }) => (
