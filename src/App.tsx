@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Publications from "./pages/Publications";
 import Work from "./pages/Work";
-import Nitp from "./pages/Nitp";
 import Codes from "./pages/Codes";
 import Datasets from "./pages/Datasets";
 import Contact from "./pages/Contact";
@@ -25,7 +24,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/work" element={<Work />} />
-          <Route path="/nitp" element={<Nitp />} />
           <Route path="/codes" element={<Codes />} />
           <Route path="/datasets" element={<Datasets />} />
           <Route path="/contact" element={<Contact />} />
