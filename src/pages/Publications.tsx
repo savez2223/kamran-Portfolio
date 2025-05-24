@@ -198,13 +198,13 @@ const Publications = () => {
                 </p>
               </div>
             </div>
-            <div className="w-16 h-8">
+            {/* <div className="w-16 h-8">
               <img
                 src="/lovable-uploads/16e5dbdf-5449-4d4b-a581-1670fa21a7e9.png"
                 alt="DOCEL.in Logo"
                 className="w-full h-full object-contain"
               />
-            </div>
+            </div> */}
           </div>
         </div>
 

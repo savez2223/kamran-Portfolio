@@ -107,13 +107,13 @@ const Index = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
             <Award className="mr-3 text-blue-700" />
             Research Expertise
-            <div className="ml-auto w-16 h-8">
+            {/* <div className="ml-auto w-16 h-8">
               <img
                 src="/lovable-uploads/16e5dbdf-5449-4d4b-a581-1670fa21a7e9.png"
                 alt="DOCEL.in Logo"
                 className="w-full h-full object-contain"
               />
-            </div>
+            </div> */}
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">

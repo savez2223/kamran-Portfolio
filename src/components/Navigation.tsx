@@ -25,13 +25,6 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10">
-              <img
-                src="/lovable-uploads/16e5dbdf-5449-4d4b-a581-1670fa21a7e9.png"
-                alt="DOCEL.in Logo"
-                className="w-full h-full object-contain"
-              />
-            </div>
             <span className="font-bold text-xl text-blue-900">
               Kamran Sohail
             </span>
