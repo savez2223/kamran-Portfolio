@@ -1,5 +1,6 @@
+
 import { Link, useLocation } from "react-router-dom";
-import { Home, BookOpen, Briefcase, Code, Database, Contact } from "lucide-react";
+import { Home, BookOpen, Briefcase, Code, Database, Building } from "lucide-react";
 
 const Navigation = () => {
   const location = useLocation();
@@ -8,9 +9,9 @@ const Navigation = () => {
     { path: "/", label: "Home", icon: Home },
     { path: "/publications", label: "Publications", icon: BookOpen },
     { path: "/work", label: "Work", icon: Briefcase },
+    { path: "/nitp", label: "NITP", icon: Building },
     { path: "/codes", label: "Codes", icon: Code },
     { path: "/datasets", label: "Datasets", icon: Database },
-    { path: "/contact", label: "Contact", icon: Contact },
   ];
 
   return (
@@ -18,8 +19,12 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">KS</span>
+            <div className="w-10 h-10">
+              <img 
+                src="/lovable-uploads/16e5dbdf-5449-4d4b-a581-1670fa21a7e9.png" 
+                alt="DOCEL.in Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <span className="font-bold text-xl text-blue-900">
               Kamran Sohail

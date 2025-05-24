@@ -30,7 +30,7 @@ const Index = () => {
             {/* Profile Image */}
             <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+                src="/lovable-uploads/df3cfbdd-9772-4143-98fa-6e68863e2fde.png" 
                 alt="Kamran Sohail" 
                 className="w-full h-full object-cover"
               />
@@ -45,6 +45,13 @@ const Index = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
             <GraduationCap className="mr-3 text-blue-700" />
             Research Interests
+            <div className="ml-auto w-16 h-8">
+              <img 
+                src="/lovable-uploads/16e5dbdf-5449-4d4b-a581-1670fa21a7e9.png" 
+                alt="DOCEL.in Logo" 
+                className="w-full h-full object-contain"
+              />
+            </div>
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6">
