@@ -9,7 +9,7 @@ const Index = () => {
       
       {/* Hero Section with Construction Background */}
       <div 
-        className="relative bg-gradient-to-r from-blue-900/90 to-purple-900/90 text-white"
+        className="relative bg-gradient-to-r from-blue-900/90 to-purple-900/90 text-black"
         style={{
           backgroundImage: 'url(/lovable-uploads/606ed747-7fd8-44a7-99dd-51e142700fea.png)',
           backgroundSize: 'cover',
@@ -20,17 +20,17 @@ const Index = () => {
         <div className="max-w-4xl mx-auto px-4 py-16">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-8 md:mb-0 md:mr-8">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Kamran Sohail</h1>
-              <p className="text-xl mb-6">Sr. Technical Assistant, NIT Patna</p>
-              <p className="text-lg opacity-90 mb-6">Ph.D. in Civil Engineering</p>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-black">Kamran Sohail</h1>
+              <p className="text-xl mb-6 text-black">Sr. Technical Assistant, NIT Patna</p>
+              <p className="text-lg opacity-90 mb-6 text-black">Ph.D. in Civil Engineering</p>
               <div className="flex flex-col md:flex-row items-start space-y-2 md:space-y-0 md:space-x-6">
                 <div className="flex items-center space-x-2">
-                  <MapPin size={16} className="opacity-75" />
-                  <span>National Institute of Technology Patna</span>
+                  <MapPin size={16} className="opacity-75 text-black" />
+                  <span className="text-black">National Institute of Technology Patna</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Mail size={16} className="opacity-75" />
-                  <span>kamran@nitp.ac.in</span>
+                  <Mail size={16} className="opacity-75 text-black" />
+                  <span className="text-black">kamran@nitp.ac.in</span>
                 </div>
               </div>
             </div>
