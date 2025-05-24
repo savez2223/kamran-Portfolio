@@ -1,6 +1,6 @@
 
 import Navigation from "@/components/Navigation";
-import { GraduationCap, MapPin, Mail, Users, Award, Briefcase } from "lucide-react";
+import { GraduationCap, MapPin, Mail, Users, Award, BookOpen, Briefcase } from "lucide-react";
 
 const Index = () => {
   return (
