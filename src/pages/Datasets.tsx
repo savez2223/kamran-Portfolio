@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import { Database, Download, FileText, Calendar } from "lucide-react";
 
@@ -6,8 +5,7 @@ const Datasets = () => {
   const ownDatasets = [
     {
       name: "INLAND",
-      description:
-        "Aerial imagery of infrastructures and lands of India.",
+      description: "Aerial imagery of infrastructures and lands of India.",
       downloadUrl: "#",
     },
     {
@@ -33,20 +31,17 @@ const Datasets = () => {
     },
     {
       name: "xxxxx",
-      description:
-        "Dataset description will be added.",
+      description: "Dataset description will be added.",
       downloadUrl: "#",
     },
     {
       name: "xxxxx",
-      description:
-        "Dataset description will be added.",
+      description: "Dataset description will be added.",
       downloadUrl: "#",
     },
     {
       name: "xxxxx",
-      description:
-        "Dataset description will be added.",
+      description: "Dataset description will be added.",
       downloadUrl: "#",
     },
   ];
@@ -86,7 +81,9 @@ const Datasets = () => {
                     <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-1 md:mb-2">
                       {dataset.name}
                     </h3>
-                    <p className="text-gray-700 text-sm md:text-base mb-2 md:mb-4">{dataset.description}</p>
+                    <p className="text-gray-700 text-sm md:text-base mb-2 md:mb-4">
+                      {dataset.description}
+                    </p>
                   </div>
 
                   <a
@@ -118,7 +115,9 @@ const Datasets = () => {
                     <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-1 md:mb-2">
                       {dataset.name}
                     </h3>
-                    <p className="text-gray-700 text-sm md:text-base mb-2 md:mb-4">{dataset.description}</p>
+                    <p className="text-gray-700 text-sm md:text-base mb-2 md:mb-4">
+                      {dataset.description}
+                    </p>
                   </div>
 
                   <a
@@ -136,7 +135,9 @@ const Datasets = () => {
 
         {/* Media Links */}
         <div className="bg-white rounded-lg shadow-sm p-4 md:p-8">
-          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">Media</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">
+            Media
+          </h2>
           <div className="flex flex-wrap gap-2 md:gap-4">
             <a
               href="#"
@@ -170,7 +171,7 @@ const Datasets = () => {
             </a>
           </div>
           <p className="text-xs md:text-sm text-gray-500 mt-4 md:mt-6">
-            Developed by Abidhan Bardhan. All rights reserved.
+            Developed by Kamran S. All rights reserved.
           </p>
         </div>
       </div>

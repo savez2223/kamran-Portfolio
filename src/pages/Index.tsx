@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import {
   GraduationCap,
@@ -23,9 +22,10 @@ const Index = () => {
         className="relative bg-gradient-to-r from-blue-900/90 to-purple-900/90 text-black"
         style={{
           backgroundImage: `url('/lovable-uploads/7cf974c3-1717-4f3a-bb99-5079f6f9f7d6.png')`,
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundBlendMode: "overlay",
+          height: "70vh",
         }}
       >
         <div className="max-w-4xl mx-auto px-4 py-16">
