@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import {
   GraduationCap,
@@ -11,7 +12,6 @@ import {
   Search,
   Globe,
 } from "lucide-react";
-import bgimage from "@/assets/bg-constrution.jpg";
 
 const Index = () => {
   return (
@@ -22,7 +22,7 @@ const Index = () => {
       <div
         className="relative bg-gradient-to-r from-blue-900/90 to-purple-900/90 text-black"
         style={{
-          backgroundImage: `url(${bgimage})`,
+          backgroundImage: `url('/lovable-uploads/7cf974c3-1717-4f3a-bb99-5079f6f9f7d6.png')`,
           backgroundSize: "contain",
           backgroundPosition: "center",
           backgroundBlendMode: "overlay",
