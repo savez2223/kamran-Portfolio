@@ -1,6 +1,4 @@
-
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
 import {
   Home,
   BookOpen,
@@ -8,13 +6,10 @@ import {
   Code,
   Database,
   Contact,
-  Menu,
-  X,
 } from "lucide-react";
 
 const Navigation = () => {
   const location = useLocation();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
     { path: "/", label: "Home", icon: Home },
@@ -24,10 +19,6 @@ const Navigation = () => {
     { path: "/datasets", label: "Datasets", icon: Database },
     { path: "/contact", label: "Contact", icon: Contact },
   ];
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
@@ -39,7 +30,6 @@ const Navigation = () => {
             </span>
           </Link>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             {navItems.map(({ path, label, icon: Icon }) => (
               <Link
@@ -57,37 +47,21 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Mobile hamburger button */}
+          {/* Mobile menu button */}
           <div className="md:hidden">
-            <button
-              onClick={toggleMobileMenu}
-              className="p-2 rounded-md text-gray-700 hover:text-blue-700 hover:bg-gray-50 transition-colors"
+            <select
+              value={location.pathname}
+              onChange={(e) => (window.location.href = e.target.value)}
+              className="border border-gray-300 rounded-md px-3 py-1 text-sm"
             >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+              {navItems.map(({ path, label }) => (
+                <option key={path} value={path}>
+                  {label}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
-
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 py-2">
-            {navItems.map(({ path, label, icon: Icon }) => (
-              <Link
-                key={path}
-                to={path}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={`flex items-center space-x-2 px-4 py-3 text-sm font-medium transition-colors ${
-                  location.pathname === path
-                    ? "text-blue-700 bg-blue-50"
-                    : "text-gray-700 hover:text-blue-700 hover:bg-gray-50"
-                }`}
-              >
-                <Icon size={16} />
-                <span>{label}</span>
-              </Link>
-            ))}
-          </div>
-        )}
       </div>
     </nav>
   );
