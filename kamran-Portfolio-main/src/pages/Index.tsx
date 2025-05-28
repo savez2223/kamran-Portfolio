@@ -305,7 +305,7 @@ const Index = () => {
             </a>
           </div>
           <p className="text-sm text-gray-500 mt-6">
-            Developed by FURQUAN A. All rights reserved.
+            Developed by FURQUAN. All rights reserved.
           </p>
         </div>
       </div>
