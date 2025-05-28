@@ -76,7 +76,7 @@ const Index = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">About</h2>
           <div className="prose max-w-none text-gray-700">
             <p className="mb-4">
-              Dr. Kamran Sohail holds a Ph.D. in Civil Engineering and his
+              Dr. Furquan Ahmad holds a Ph.D. in Civil Engineering and his
               research work focusses on transportation geotechnics, high
               performance computational modelling, AI/ML-based modelling,
               data-centric construction, and computer vision for satellite image

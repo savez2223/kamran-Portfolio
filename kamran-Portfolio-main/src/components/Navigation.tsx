@@ -44,7 +44,7 @@ const Navigation = () => {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center space-x-2">
               <span className="font-bold text-xl text-blue-900">
-                Kamran Sohail
+                Furquan Ahmad
               </span>
             </Link>
 
