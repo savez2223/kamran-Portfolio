@@ -255,9 +255,9 @@ const Work = () => {
               OrcID
             </a>
           </div>
-          <p className="text-sm text-gray-500 mt-6">
+          {/* <p className="text-sm text-gray-500 mt-6">
             Developed by Kamran S. All rights reserved.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
