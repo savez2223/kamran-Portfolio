@@ -305,7 +305,7 @@ const Index = () => {
             </a>
           </div>
           <p className="text-sm text-gray-500 mt-6">
-            Developed by Kamran S. All rights reserved.
+            Developed by Furquan A. All rights reserved.
           </p>
         </div>
       </div>
